@@ -56,10 +56,8 @@ itemsCtrl.updateItem = async (req, res) => {
 // Delete an item
 itemsCtrl.deleteItem = async (req, res) => {
     try {
-        const itemToBook = await Item.findById(item_id)
-        const new_qty = Number(qty_to_book) + itemToBook.qty
-        itemToBook.qty = new_qty
-        await itemToBook.save()
+        const { id } = req.params;
+        await Item.findByIdAndRemove(id)
         return res.status(200).json({ msg: 'Item has been removed' });
     } catch (error) {
         return res.status(400).json({error: error.name, error_msg: error.message});
