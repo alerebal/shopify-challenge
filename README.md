@@ -22,6 +22,7 @@ I had to build an inventory tracking web application for a logistics company, us
 
 Once you are in Replit, press the green Run button.
 When the app is running you can use [Postman](https://www.postman.com/) or any other method that you want to start to make requests. The app has not home page so a **cannot get /** will be display on the screen or in the page if you press the **Open website** link.
+#### This step it's not really necessary, the app start to run alone once you make any request to the url provided below.
 
 The url to make requests is:
     
