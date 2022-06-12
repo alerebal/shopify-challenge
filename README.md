@@ -33,6 +33,7 @@ Method: Get
 
     https://ShopifyChallenge.alerebal.repl.co/api/items
 
+![items](src/img/readme/items.png)
 
 ### Get an item
 
@@ -41,6 +42,8 @@ Method: Get
     https://ShopifyChallenge.alerebal.repl.co/api/item/<item_id>
 
 #### Replace item_id for any _id of the items shown previously or create a new one an use its _id
+
+![item](src/img/readme/item.png)
 
 ### Create an item
 
@@ -74,6 +77,7 @@ Method: Delete
 ### Create a shipment
 
 Method: Post
+
 Body: Raw, application/JSON
 
     https://ShopifyChallenge.alerebal.repl.co/api/createShipment
@@ -88,8 +92,11 @@ When a shipment is created the stock is modificated. I created a helpers folder 
 If there are not enough quantity of the item, but there are some items, the item_id and the quantity left in the stock will be delivered and the quantity of item not delivered put into a item_no_availables list. If there is none item availables, the item_id and a message will be put into the same list.
 
 ![Pre shipment list](src/img/readme/preShipment.png)
+
 ![Short shipment](src/img/readme/shortShipment.png)
+
 ![Short shipment 2](src/img/readme/shortShipment2.png)
+
 ![After shipment list](src/img/readme/afterShipment.png)
 
 #### The quantity of each items han been modificated, and the list of items no delivered filled with the according quantity.
