@@ -12,6 +12,6 @@ app.use(express.urlencoded({ extended: false }));
 
 // Routes
 app.use('/api', require('./routes/items.routes'));
-app.use('/api', require('./routes/shipments.routes'))
+app.use('/api', require('./routes/shipments.routes'));
 
 module.exports = app;

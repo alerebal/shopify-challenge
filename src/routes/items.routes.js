@@ -4,7 +4,7 @@ const {
     getItem,
     createItem,
     updateItem,
-    deleteItem,
+    deleteItem
 } = require('../controllers/items.controllers');
 
 router.get('/items', getItems);
